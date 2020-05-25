@@ -228,7 +228,7 @@ class _TripPageState extends State<TripPage> {
           ),
         ),
         Container(
-          padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 2),
+          padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 2),
           width: 364,
           child: Text(
             mediaItem.description ?? '',

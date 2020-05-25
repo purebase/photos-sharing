@@ -97,14 +97,18 @@ class TripAppBar extends StatelessWidget implements PreferredSizeWidget {
               context,
               MaterialPageRoute(
                 builder: (BuildContext context) => LoginPage(),
-              ),
+              )
             );
           },
           itemBuilder: (BuildContext context) {
             return <PopupMenuEntry<_AppBarOverflowOptions>>[
               PopupMenuItem<_AppBarOverflowOptions>(
                 value: _AppBarOverflowOptions.signout,
-                child: const Text('Disconnect from Google Photos'),
+                child: const Text('Disconnect from Google Photos')
+              ),
+              PopupMenuItem<_AppBarOverflowOptions>(
+                value: null,
+                child: const Text('TRy Menue')
               )
             ];
           },

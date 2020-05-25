@@ -73,6 +73,7 @@ class TripListPage extends StatelessWidget {
         return ListView.builder(
           itemCount: photosLibraryApi.albums.length + 1,
           itemBuilder: (BuildContext context, int index) {
+
             if (index == 0) {
               return _buildButtons(context);
             }
@@ -85,11 +86,13 @@ class TripListPage extends StatelessWidget {
     );
   }
 
+  //###########################################################
+
   Widget _buildTripCard(BuildContext context, Album sharedAlbum,
       PhotosLibraryApiModel photosLibraryApi) {
     return Card(
       shape: RoundedRectangleBorder(
-        borderRadius: const BorderRadius.all(Radius.circular(8)),
+        borderRadius: const BorderRadius.all(Radius.circular(20)),
       ),
       elevation: 3,
       clipBehavior: Clip.antiAlias,

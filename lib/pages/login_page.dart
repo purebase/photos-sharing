@@ -70,6 +70,8 @@ class LoginPage extends StatelessWidget {
     );
   }
 
+  //###########################################################
+
   void _showSignInError(BuildContext context) {
     final SnackBar snackBar = SnackBar(
       duration: Duration(seconds: 3),
